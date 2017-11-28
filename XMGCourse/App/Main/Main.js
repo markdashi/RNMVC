@@ -25,7 +25,7 @@ export default class App extends Component<{}> {
         var item2 = new CommonRowItem('icon_mine_myAccount_password','阅历','');
 
 
-        var group = CommonGroupItem([item0,item1,item2],0);
+        var group = new CommonGroupItem([item0,item1,item2],0);
         groups.push(group)
     }
 
@@ -35,7 +35,7 @@ export default class App extends Component<{}> {
         var item1 = new CommonRowItem('icon_mine_myAccount_livingCity','到过的公园','');
         var item2 = new CommonRowItem('icon_mine_myAccount_password','阅历','');
         
-        var group = CommonGroupItem([item0,item1],20);
+        var group = new CommonGroupItem([item0,item1],20);
         groups.push(group)
     }
     
