@@ -13,7 +13,7 @@ import {
 
 import {PropTypes} from 'prop-types'
 
-
+import CommonRowCell from 'CommonRowCell'
 
 /**
  *  [s1,s2]
@@ -96,7 +96,7 @@ export default class CommonFlatView extends Component<{}> {
     _renderItem({item}){
         console.log(item);
         return(
-            <Text>{item.image}</Text>
+            <CommonRowCell rowData={item}/>
         )
     }
 
