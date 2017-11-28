@@ -11,4 +11,4 @@ function CommonRowItem(image,title,subTitle) {
 
 }
 
-modules.exports = CommonRowItem;
+module.exports = CommonRowItem;

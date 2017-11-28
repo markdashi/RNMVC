@@ -9,4 +9,5 @@ function CommonGroupItem(rowData,sectionheight) {
     this.sectionheight = sectionheight
 }
 
-modules.exports = CommonGroupItem;
+module.exports = CommonGroupItem;
+
