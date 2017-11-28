@@ -34,15 +34,21 @@ export default class CommonFlatView extends Component<{}> {
       constructor(props) {
           super(props);
           // 初始状态
-
+          // this.state = {
+          //     ds:[]
+          // };
 
           var sectionData = [];
 
           var groups = this.props.groups;
 
           groups.forEach((groupItem,index)=>{
-              sectionData.push(groupItem.rowData)
+              sectionData.push({
+                  sectionheight:groupItem.sectionheight,
+                  data:groupItem.rowsData
+              })
           })
+           // console.log(sectionData)
           this.state = {
               ds:sectionData
           };
@@ -56,8 +62,8 @@ export default class CommonFlatView extends Component<{}> {
 // *
     componentDidMount() {
 
-
-        console.log(this.props.groups);
+        // console.log('=====');
+        // console.log(this.props.groups);
 
         var dataS = []
 
@@ -74,6 +80,7 @@ export default class CommonFlatView extends Component<{}> {
                 {text: 'SSection2 item0', key: '1'}
             ]
         })
+        // console.log(dataS)
         // this.setState({
         //     ds:dataS
         // })
@@ -82,22 +89,20 @@ export default class CommonFlatView extends Component<{}> {
     }
 
     _renderSectionHeader({section}){
-        // console.log(section)
        return(
-           <Text>{section.s1}</Text>
+           <View style={{marginTop:section.sectionheight}}></View>
        )
     }
     _renderItem({item}){
-        // console.log(item);
+        console.log(item);
         return(
-            <Text>{item.text}</Text>
+            <Text>{item.image}</Text>
         )
     }
 
 
 
     render() {
-
         return (
             <SectionList
                 renderItem={this._renderItem}
@@ -108,4 +113,8 @@ export default class CommonFlatView extends Component<{}> {
         );
     }
 }
-
+const styles = StyleSheet.create({
+    SectionHeaderStyle:{
+        marginTop:20
+    }
+});

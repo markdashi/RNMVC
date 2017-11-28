@@ -54,7 +54,7 @@ export default class App extends Component<{}> {
           this.state = {
               groups:groups
           };
-          console.log(groups)
+          // console.log(groups)
       }
     
     

@@ -3,9 +3,9 @@
  */
 
 //ES5
-function CommonGroupItem(rowData,sectionheight) {
+function CommonGroupItem(rowsData,sectionheight) {
 
-    this.rowData = rowData;
+    this.rowsData = rowsData;
     this.sectionheight = sectionheight
 }
 
