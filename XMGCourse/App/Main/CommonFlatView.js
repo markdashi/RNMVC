@@ -96,7 +96,10 @@ export default class CommonFlatView extends Component<{}> {
     _renderItem({item}){
         console.log(item);
         return(
-            <CommonRowCell rowData={item}/>
+            <CommonRowCell
+                  rowData={item}
+                  titleLabelStyle={{fontSize:15}}
+            />
         )
     }
 
