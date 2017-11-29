@@ -111,13 +111,14 @@ export default class CommonFlatView extends Component<{}> {
                 renderItem={this._renderItem}
                 renderSectionHeader={this._renderSectionHeader}
                 sections={this.state.ds}
-                style={{marginTop:20}}
+                style={{marginTop:20,backgroundColor:'#e8e8e8'}}
             />
         );
     }
 }
 const styles = StyleSheet.create({
     SectionHeaderStyle:{
-        marginTop:20
+        marginTop:20,
+ 
     }
 });

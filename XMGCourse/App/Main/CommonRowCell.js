@@ -46,7 +46,7 @@ export default class CommonRowCell extends Component<{}>{
                 style={styles.cellStyle}
                 disabled={this.props.rowData.disabled}
             >
-                <Image source={{uri:this.props.rowData.image}} style={[styles.TitleImageStyle,this.props.imageStyle]}/>
+                {this.props.rowData.image?<Image source={{uri:this.props.rowData.image}} style={[styles.TitleImageStyle,this.props.imageStyle]}/>:null}
                 <Text style={[styles.TitleTextStyle,this.props.titleLabelStyle]}>{this.props.rowData.title}</Text>
                 {this._renderAccesoryView()}
             </TouchableOpacity>
@@ -90,7 +90,8 @@ const styles = StyleSheet.create({
         flexDirection:'row',
         alignItems:'center',
         borderBottomColor:'#e5e5e5',
-        borderBottomWidth:1
+        borderBottomWidth:1,
+        backgroundColor:'white'
     },
     TitleImageStyle:{
         width:17,

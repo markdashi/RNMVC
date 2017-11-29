@@ -10,6 +10,7 @@ function CommonRowItem(image,title,subTitle) {
     this.subTitle = subTitle
 
     this.RowItemClick = null
+    this.route = null;
 }
 
 module.exports = CommonRowItem;

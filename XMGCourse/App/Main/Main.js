@@ -23,7 +23,8 @@ export default class App extends Component<{}> {
 
     _setupGroup0(groups){
 
-        var item0 = new CommonArrowItem('icon_mine_member_instructions','小码哥','年薪100W');
+        //icon_mine_member_instructions
+        var item0 = new CommonArrowItem('','小码哥','年薪100W');
         item0.RowItemClick = function () {
             alert('item0点击')
         }
