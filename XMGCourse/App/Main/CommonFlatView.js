@@ -119,6 +119,6 @@ export default class CommonFlatView extends Component<{}> {
 const styles = StyleSheet.create({
     SectionHeaderStyle:{
         marginTop:20,
- 
+
     }
 });

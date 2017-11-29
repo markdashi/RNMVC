@@ -21,6 +21,7 @@ import CommonFlatView from 'CommonFlatView'
 
 export default class App extends Component<{}> {
 
+
     _setupGroup0(groups){
 
         //icon_mine_member_instructions
@@ -61,7 +62,9 @@ export default class App extends Component<{}> {
           this.state = {
               groups:groups
           };
-          // console.log(groups)
+          console.log('============')
+          console.log(...this.props);
+          console.log('============')
       }
     
     
